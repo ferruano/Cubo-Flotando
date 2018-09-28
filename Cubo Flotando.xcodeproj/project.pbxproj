@@ -12,6 +12,7 @@
 		C3EF2025215E2BB30054A71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EF2023215E2BB30054A71D /* Main.storyboard */; };
 		C3EF2027215E2BB40054A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3EF2026215E2BB40054A71D /* Assets.xcassets */; };
 		C3EF202A215E2BB40054A71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EF2028215E2BB40054A71D /* LaunchScreen.storyboard */; };
+		C3EF2032215E2EBE0054A71D /* ParametricFunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF2031215E2EBE0054A71D /* ParametricFunctionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C3EF2026215E2BB40054A71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3EF2029215E2BB40054A71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3EF202B215E2BB40054A71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EF2031215E2EBE0054A71D /* ParametricFunctionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParametricFunctionView.swift; path = "../../../RiegoAutomatico/Practica 2 - Riego Automatico/Riego Automatico/ParametricFunctionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C3EF2023215E2BB30054A71D /* Main.storyboard */,
 				C3EF2026215E2BB40054A71D /* Assets.xcassets */,
 				C3EF2028215E2BB40054A71D /* LaunchScreen.storyboard */,
+				C3EF2031215E2EBE0054A71D /* ParametricFunctionView.swift */,
 				C3EF202B215E2BB40054A71D /* Info.plist */,
 			);
 			path = "Cubo Flotando";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EF2032215E2EBE0054A71D /* ParametricFunctionView.swift in Sources */,
 				C3EF2022215E2BB30054A71D /* ViewController.swift in Sources */,
 				C3EF2020215E2BB30054A71D /* AppDelegate.swift in Sources */,
 			);

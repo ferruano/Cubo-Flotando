@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,149 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cubo_Flotando" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fig-Vc-Uq4" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                <rect key="frame" x="17" y="448" width="342" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.31387779913083558" blue="0.93143930606425451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m23-ad-rdZ">
+                                <rect key="frame" x="16.5" y="418" width="57.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErU-KT-eqL">
+                                <rect key="frame" x="317" y="419.5" width="42" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5js-bd-yVE">
+                                <rect key="frame" x="80" y="415" width="231" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="WJa-4n-Lw5"/>
+                                    <constraint firstAttribute="height" constant="29" id="bxj-Lf-sWb"/>
+                                </constraints>
+                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="lON-TG-qeS">
+                                <rect key="frame" x="0.0" y="84" width="343" height="249"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lzB-yq-5ab">
+                                        <rect key="frame" x="15" y="0.0" width="328" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqa-9b-07a" userLabel="Lado">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0bh-Eg-wdL">
+                                                <rect key="frame" x="51" y="0.0" width="279" height="31"/>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0bh-Eg-wdL" firstAttribute="centerY" secondItem="Oqa-9b-07a" secondAttribute="centerY" id="Glx-BM-Xbi"/>
+                                            <constraint firstItem="0bh-Eg-wdL" firstAttribute="leading" secondItem="Oqa-9b-07a" secondAttribute="trailing" constant="15" id="Ii1-Zi-iFY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-LS-3KK">
+                                        <rect key="frame" x="15" y="30" width="328" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0wJ-HA-Sms" userLabel="graf">
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="198.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5H-lU-4r8" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="66"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCp-UB-quG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.039208656993207414" blue="0.029337103395788877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="yv4-P5-3Da"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMl-qC-pz7" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="66" width="343" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-35-fmc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.95824909562885807" green="1" blue="0.055718694500247135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="343" id="tmq-g0-JhD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ht-jc-hf7" customClass="ParametricFunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="132.5" width="343" height="66"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-5Q-8Qm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.13548090609482266" green="0.22108307315057085" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wMl-qC-pz7" firstAttribute="height" secondItem="R5H-lU-4r8" secondAttribute="height" id="7l2-cY-Roz"/>
+                                            <constraint firstItem="7ht-jc-hf7" firstAttribute="width" secondItem="wMl-qC-pz7" secondAttribute="width" id="O2c-GC-AoJ"/>
+                                            <constraint firstItem="wMl-qC-pz7" firstAttribute="height" secondItem="7ht-jc-hf7" secondAttribute="height" id="csh-vm-DWe"/>
+                                            <constraint firstItem="7ht-jc-hf7" firstAttribute="width" secondItem="R5H-lU-4r8" secondAttribute="width" id="nJc-pp-0Rp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lzB-yq-5ab" secondAttribute="trailing" constant="15" id="DTK-mF-OHJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="hhD-LS-3KK" secondAttribute="trailing" constant="15" id="Fuo-PA-nRh"/>
+                                    <constraint firstItem="R5H-lU-4r8" firstAttribute="width" secondItem="lON-TG-qeS" secondAttribute="width" id="qMr-Dw-uii"/>
+                                    <constraint firstItem="hhD-LS-3KK" firstAttribute="leading" secondItem="lON-TG-qeS" secondAttribute="leading" constant="15" id="rXb-a4-PVV"/>
+                                    <constraint firstItem="lzB-yq-5ab" firstAttribute="leading" secondItem="lON-TG-qeS" secondAttribute="leading" constant="15" id="vf9-vB-3eb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="SideLabel" destination="Oqa-9b-07a" id="Nyi-8b-rQC"/>
+                        <outlet property="SideSlider" destination="0bh-Eg-wdL" id="8ZK-cC-UWp"/>
+                        <outlet property="TiempoSlider" destination="5js-bd-yVE" id="3Jg-sr-iTd"/>
+                        <outlet property="aLabel" destination="y5U-5Q-8Qm" id="Fxr-Oy-atM"/>
+                        <outlet property="acelerationView" destination="7ht-jc-hf7" id="nPy-5q-74X"/>
+                        <outlet property="pLabel" destination="NCp-UB-quG" id="GCt-8O-AZT"/>
+                        <outlet property="positionView" destination="R5H-lU-4r8" id="u5d-sh-yFa"/>
+                        <outlet property="speedView" destination="wMl-qC-pz7" id="ART-T9-WrK"/>
+                        <outlet property="tLabel" destination="ErU-KT-eqL" id="vUJ-7A-bmk"/>
+                        <outlet property="vLabel" destination="S3p-35-fmc" id="x1I-CD-D8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
